@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Ai Chat Box</title>
+  
+  <script async type='module' src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+    body { background: #f3f6fb; display: flex; flex-direction: column; align-items: center; min-height: 100vh; padding-bottom: 40px; }
+    
+    /* Layout styling */
+    .banner { 
+      width: 95%; max-width: 1100px; margin: 20px 0; border-radius: 24px; padding: 25px; 
+      background: linear-gradient(135deg,#6a5af9,#8338ec); color: #fff;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .price-card { 
+      background: rgba(255,255,255,0.15); backdrop-filter: blur(8px); 
+      border-radius: 20px; display: flex; align-items: center; padding: 12px 20px; gap: 15px; 
+    }
+
+    /* Chat Box Container */
+    .chat-container {
+      width: 95%;
+      max-width: 850px;
+      height: 650px; /* Fixed height is safer for embeds */
+      background: #ffffff;
+      border-radius: 24px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+      overflow: hidden;
+      border: 1px solid #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+
+<div class="banner">
+    <div class="left-text"><h2>Hello, Krishna! 👋</h2></div>
+    <div class="price-card">
+        <div><small>Weather</small><br><strong>26°C</strong></div>
+        <div style="width:1px; height:30px; background:rgba(255,255,255,0.3);"></div>
+        <div><small>Soil</small><br><strong>Good</strong></div>
+    </div>
+</div>
+
+
+<div class="chat-container">
+  <iframe 
+    src='https://interfaces.zapier.com/embed/chatbot/cml39w67o004pp01u6qj7c4ci' 
+    height='100%' 
+    width='100%' 
+    allow='clipboard-write *' 
+    style="border: none;">
+  </iframe>
+</div>
+</body>
+</html>
