@@ -12,12 +12,23 @@ right: 20px;
 z-index: 9999;">
 </div>
 <body>
-
-
-
+<!-- new  -->
+<div class="top-image">
+  <img src="plough.png.png" alt="Tool Image">
+</div>
 
 
     <style>
+        .top-image {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.top-image img {
+  width: 150px;
+  height: 140px;
+} 
+/* new up */
         * {
     margin: 0;
     padding: 0;
@@ -31,23 +42,40 @@ body {
 
 section {
     display: flex;
-    min-height: 100vh;
+    min-height: 30vh;
     align-items: center;
     justify-content: center;
     background: linear-gradient(to bottom, #f7f7fe, #dff1ff);
 }
 
+.login-btn {
+  display: inline-block;
+  width: 40%;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  background-color:  #000000 ;   /* button color */
+  color: #fff;
+  font-size: 10px;
+  font-weight: 400;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-btn:hover {
+  background-color:  #5b3dad;
+  transform: translateY(-2px);
+}
+
+.login-btn:active {
+  transform: translateY(0);
+}
 section .colour {
     position: absolute;
     filter: blur(150px);
 }
 
-section .colour:nth-child(1) {
-    top: -350px;
-    width: 600px;
-    height: 600px;
-    background: #0ba1a1;
-}
 
 section .colour:nth-child(2) {
     left: 100px;
@@ -95,24 +123,24 @@ section .colour:nth-child(3) {
 }
 
 .box .square:nth-child(1) {
-    top: -50px;
-    left: -60px;
-    width: 100px;
+    top: -10px;
+    left: -40px;
+    width: 50px;
     height: 100px;
 }
 
 .box .square:nth-child(2) {
-    z-index: 2;
-    top: 150px;
+    z-index: 50px;
+    top: 150x;
     left: -100px;
     width: 120px;
     height: 120px;
 }
 
 .box .square:nth-child(3) {
-    z-index: 2;
+    z-index: 20px;
     width: 80px;
-    height: 80px;
+    height: 50px;
     right: -50px;
     bottom: -60px;
 }
@@ -126,15 +154,15 @@ section .colour:nth-child(3) {
 
 .box .square:nth-child(5) {
     top: -80px;
-    left: 140px;
-    width: 60px;
-    height: 60px;
+    left: 100px;
+    width: 40px;
+    height: 40px;
 }
 
 .container {
     width: 400px;
     display: flex;
-    min-height: 400px;
+    min-height: 50px;
     position: relative;
     border-radius: 10px;
     align-items: center;
@@ -254,21 +282,9 @@ section .colour:nth-child(3) {
                         </div>
 <!-- login buttton -->
                             <div class="input__box">
-<a href="loginhom.html" class="login-btn">Login</a>
-
+  <a href="loginhom.html" class="login-btn">Login</a>
 </div>
-                        <p class="forget">
-                            Forgot Password? <a href="#">Click Here</a>
-                        </p>
-                        <p class="forget">
-                            Don't have an account? <a href="#">Sing up</a>
-                        </p>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+
+
 </body>
-
 </html>
-
